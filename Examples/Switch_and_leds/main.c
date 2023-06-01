@@ -9,9 +9,11 @@
 
 
 #include "bit_calc.h"
+#include "STD_Types.h"
 #include "avr/delay.h"
-#include "DIO_Config.h"
 #include "DIO_Interface.h"
+#include "DIO_Config.h"
+
 #include "DIO_Private.h"
 
 //The following code is checking if the button is pressed or not
@@ -34,13 +36,13 @@ int main(){
 
 		if(DIO_U8_GetPinValue(Group_A, PIN0) == 0){
 
-			for(int i=0;i<10;i++){
+			for(u8 i=0;i<10;i++){
 				DIO_U8_PORTB = arr[i];
 				_delay_ms(1000);
 			}
 
 		}else{
-			for(int i=9;i>=0;i--){
+			for(u8 i=9;i>=0;i--){
 
 				DIO_U8_PORTB = arr[i];
 				_delay_ms(1000);
