@@ -17,3 +17,8 @@ You can configure which ports you want to Use set it in the Interface.h
 
 dont forget to include the bit_calc.h and STD_Types.h for the driver to work correctly 
 
+the bitcalc.h has macro functions for bit operations 
+
+while the STD_Types has  defined data types in C 
+
+
